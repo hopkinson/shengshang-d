@@ -1,0 +1,8 @@
+<resources>
+
+    <style name="TopPopTheme">
+        <item name="android:windowEnterAnimation">@anim/pop_top_show</item>
+        <item name="android:windowExitAnimation">@anim/pop_top_hide</item>
+    </style>
+
+</resources>

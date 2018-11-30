@@ -1,0 +1,15 @@
+include ':app',':sdk',':nexus', ':wxframework', ':erospluginwxshare', ':erospluginwxpay', ':erospluginamap', 'erospluginnative',':erosplugingt'
+
+// 基础库
+project(':wxframework').projectDir = new File(settingsDir,'/wxframework/eros-framework')
+project(':sdk').projectDir = new File(settingsDir,'/nexus/sdk')
+project(':nexus').projectDir = new File(settingsDir,'/nexus/nexus')
+// 分享
+project(':erospluginwxshare').projectDir = new File(settingsDir,'/erospluginumeng/library-wxshare')
+// 通知
+project(':erospluginnative').projectDir = new File(settingsDir,'/erospluginnative')
+// 微信支付
+project(':erospluginwxpay').projectDir = new File(settingsDir,'/erospluginwxpay/library-wxpay')
+// Amap
+project(':erospluginamap').projectDir = new File(settingsDir,'/ErosPluginAmap/ErosPluginAmap')
+project(':erosplugingt').projectDir = new File(settingsDir,'/erosplugingt/erosplugingt')

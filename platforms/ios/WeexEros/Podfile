@@ -1,0 +1,34 @@
+# @Author: hopkinson
+# @Date:   2018-10-09T01:29:42+08:00
+# @Last modified by:   hopkinson
+# @Last modified time: 2018-11-03T23:44:30+08:00
+
+
+
+source 'https://github.com/CocoaPods/Specs.git'
+platform :ios, '8.0'
+#忽略引入库的警告
+inhibit_all_warnings!
+
+def common
+    #WeexSDK
+    pod 'WeexSDK', :git => 'https://github.com/bmfe/WeexiOSSDK.git', :tag => '0.18'
+    #Weex debugger 调试工具，只在开发模式集成
+    pod 'WXDevtool', '0.15.3', :configurations => ['Debug']
+    #Eros iOS 基础库
+    pod 'ErosPluginBaseLibrary', :git => 'https://github.com/bmfe/eros-plugin-ios-baseLibrary.git', :tag => '1.3.1'
+
+    #Other Plugins
+    #微信支付
+    pod 'ErosPluginWXPay', :git => 'https://github.com/bmfe/eros-plugin-ios-wxpay.git', :tag => '1.0.0'
+    # 高德地图
+    pod 'ErosPluginAmap', :git => 'https://github.com/bmfe/eros-plugin-ios-amap.git', :tag => '1.0.0'
+    # 支付宝
+    pod 'eros-plugin-iOS-alipay', :git => 'https://github.com/zhongdom/eros-plugin-iOS-alipay.git', :tag => '0.0.3'
+    # 个推
+    pod 'ErosPluginGeTui', :git => 'https://github.com/bmfe/eros-plugin-ios-getui.git', :tag => '1.0.1'
+   end
+
+target 'WeexEros' do
+    common
+end

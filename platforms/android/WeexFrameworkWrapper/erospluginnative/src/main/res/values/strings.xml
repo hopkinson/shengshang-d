@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">erospluginnative</string>
+    <string name="top_notification">顶部弹窗</string>
+    <string name="tv_title_def">弹窗标题</string>
+    <string name="tc_content_def">弹窗的内容</string>
+    <string name="tv_time_def">19:30</string>
+</resources>

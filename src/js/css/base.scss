@@ -1,0 +1,31 @@
+/**
+ * 这里编写 sass 之后，可在 vue 的 style 标签中通过 @import 相对路径引入
+ * 注意 style 标签的 lang 属性需要设置为 scss/sass
+ */
+
+$base-color: #ffd000;
+.input {
+    tint-color: $base-color;
+    font-size: 34px;
+    height: 80px;
+    padding-left: 20px;
+    color: #333;
+    width: 750px;
+}
+
+.textarea {
+    flex: 1;
+    tint-color: $base-color;
+    color: #333;
+}
+
+.footer-center {
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.row {
+    flex-direction: row;
+}
